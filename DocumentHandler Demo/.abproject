@@ -1,0 +1,37 @@
+{
+  "ProjectName": "DocumentHandler Demo",
+  "ProjectGuid": "cb931926-23db-4252-bdf6-91172bacf4eb",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.DocumentHandlerDemo",
+  "DisplayName": "DocumentHandler Demo",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{a3caa1c0-3f5f-47aa-a6c7-46ffd8151a96}",
+  "WP8ProductID": "{fbfbd214-10c6-4fe8-806d-8620132c2ccc}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
