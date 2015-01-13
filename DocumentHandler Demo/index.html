@@ -30,7 +30,8 @@
         </div>
         <h3>DocumentHandler Plugin Demo</h3>
         <p>
-            The DocumentHandler plugin allows you to open files from the internet on your device.
+          The DocumentHandler plugin allows you to open files from the internet on your device.
+          The plugin uses the QuickLook framework on iOS and any appropriate app installed to handle the filetype on Android.
         </p>
         <p>
             Custom plugins don't work in the simulator and the AppBuilder companion app,
@@ -47,13 +48,20 @@
         <div class="demo">
             <h3 class="hassubtitle">Handle documents</h3>
             <div class="subtitle">
-                Bla..
+              Press any of these buttons to see how your device handles various filetypes.
+              This is not an exhaustive list but rather a few common file types for you to try out.
             </div>
             <button data-role="button" class="button" data-bind="click: handlePDF">.pdf</button>
             <button data-role="button" class="button" data-bind="click: handleDOC">.doc</button>
             <button data-role="button" class="button" data-bind="click: handleDOCX">.docx</button>
             <button data-role="button" class="button" data-bind="click: handleRTF">.rtf</button>
-            <button data-role="button" class="button" data-bind="click: handleTXT">.txt</button><br/>
+            <button data-role="button" class="button" data-bind="click: handleTXT">.txt</button>
+
+            <h3 class="hassubtitle">Invalid URLs</h3>
+            <div class="subtitle">
+              The plugin gracefully handles the case when a file is not found at the passed-in URL.
+              We just alert a message here, but you can do whatever you want when the error callback is invoked.
+            </div>
             <button data-role="button" class="button" data-bind="click: handleUnknown">non existing file</button>
         </div>
         

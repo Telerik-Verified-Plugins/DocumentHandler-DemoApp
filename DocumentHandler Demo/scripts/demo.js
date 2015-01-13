@@ -31,15 +31,18 @@
       handleFile: function (extension) {
           if (!this.checkSimulator()) {
             handleDocumentWithURL(
-            function(msg) {alert('success: ' + msg)},
-              function(error) {
-                if (error == 53) {
+            function(msg) {console.log('DocumentHandler success: ' + msg)},
+              function(errorcode) {
+                if (errorcode == 2) {
+                  alert('File not found, please check the URL.');
+                } else if (errorcode == 53) {
                   alert('No app that handles this file type.');
                 } else {
-                  alert('Generic error: ' + error);
+                  alert('Unknown error. Code: ' + error);
                 }
               },
-              'http://www.x-services.nl/samplefiles/sample.' + extension
+              // loading one of our GitHub hosted sample files
+              'https://github.com/Telerik-Verified-Plugins/DocumentHandler/raw/master/samplefiles/sample.' + extension
             );
           }
         },
